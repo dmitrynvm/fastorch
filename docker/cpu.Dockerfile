@@ -26,5 +26,5 @@ COPY /lib /usr/local/lib
 COPY /data /data
 COPY /server /server
 WORKDIR /server
-RUN ./build.sh
+RUN ./compile.sh
 CMD ./predict /data/mobile.onnx /data/labels.txt

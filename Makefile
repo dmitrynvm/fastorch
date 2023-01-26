@@ -1,5 +1,5 @@
 init: 
-	./scripts/init.sh
+	./script/init.sh
 
 build:
 	docker build -t server -f docker/cpu.Dockerfile .
@@ -17,4 +17,4 @@ ping:
 	python3 test/ping.py 
 
 clean: 
-	./scripts/clean.sh
+	./script/clean.sh

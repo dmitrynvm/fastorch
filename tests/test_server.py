@@ -6,4 +6,4 @@ def test_server():
     image_path = "data/tench.jpg"
     encoded = str(base64.b64encode(open(image_path, "rb").read()))
     result = requests.post(url, json={"image": encoded}).json()
-    assert result['label'] == ''
+    assert result['label'] == 'tench'
