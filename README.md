@@ -1,4 +1,4 @@
-# Fast PyTorch Model Server
+# Fast Model Inference with Pytorch and ONNXRuntime
 
 The guide explaines how to run inference server and create a virtual enviroment for manual testing of this server. 
 
@@ -21,7 +21,7 @@ The guide explaines how to run inference server and create a virtual enviroment 
 
 4. Start server
 ```bash
-	make up
+    make up
 ```
 5. Run tests and manual pings
 ```bash
@@ -31,7 +31,7 @@ The guide explaines how to run inference server and create a virtual enviroment 
 
 6. Run the container and debug
 ```bash
-	make run
+    make run
 ```
 
 7. Clean up the environment
