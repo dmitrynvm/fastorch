@@ -23,9 +23,8 @@ RUN pip3 install torch==1.13.1 torchvision==0.14.1 --extra-index-url https://dow
 RUN pip3 install pytest==7.2.0 onnx==1.13.0 flatbuffers==23.1.21 ranger-fm
 
 COPY /lib /usr/local/lib
-RUN rm -rf /data && rm -rf /server
 COPY /data /data
 COPY /server /server
 WORKDIR /server
-RUN ./predict.sh
+RUN ./build.sh
 CMD ./predict /data/mobile.onnx /data/labels.txt
