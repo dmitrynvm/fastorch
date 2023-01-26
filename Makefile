@@ -14,7 +14,7 @@ test:
 	pytest --log-cli-level=INFO
 
 ping:
-	python3 test/ping.py 
+	python3 tests/ping.py
 
 clean: 
 	./script/clean.sh

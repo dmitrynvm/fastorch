@@ -12,7 +12,6 @@
 #include <string>
 #include <vector>
 #include "crow.hpp"
-#include "base64.hpp"
 
 
 int PORT = 8000;

@@ -24,6 +24,7 @@ RUN pip3 install pytest==7.2.0 onnx==1.13.0 flatbuffers==23.1.21 ranger-fm
 
 COPY /lib /usr/local/lib
 COPY /data /data
+RUN rm -rf /server
 COPY /server /server
 WORKDIR /server
 RUN ./compile.sh
